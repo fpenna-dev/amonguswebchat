@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "VCR-OSD-MONO";
+    src: url("../font/VCR-OSD-MONO.ttf"); }
+
+body {
+    background: #000 url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgba(0, 0, 0, 0.87);
+    background-attachment: fixed;
+    font-family: VCR-OSD-MONO, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+body::-webkit-scrollbar {
+    width: 10px; }
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px; }
+body::-webkit-scrollbar-thumb {
+    background-color: #e0e1dd;
+    border-radius: 10px; }
+
+.header{
+    background-color: rgba(224, 225, 221, 0.8);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 20px 20px 0px 0px;
+}
+.header__logo{
+    width: 50%;
+    padding-top: 20px;
+}
+.header__title{
+    font-size: 1.5rem;
+    margin: 5px;
+    text-align: center;
+}
+.header__desc{
+    width: 80%;
+    text-align: center;
+    font-size: 1.10rem;
+}
+.section{
+    background-color: rgba(224, 225, 221, 0.8);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.section__link{
+    display: flex;
+    justify-content: center;
+}
+.section__img{
+    width: 35%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.section__mensajes{
+    background: #000 url("../img/bgmj.jpg");
+    border: 3px solid #0d1b2a;
+    width: 86%;
+    border-radius: 20px;
+    font-family: Helvetica, Arial, sans-serif; 
+
+}
+.section__list{
+    list-style: none;
+    overflow: scroll;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.section__list::-webkit-scrollbar {
+    width: 10px; }
+.section__list::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px; }
+.section__list::-webkit-scrollbar-thumb {
+    background-color: #e0e1dd;
+    border-radius: 10px; 
+}
+
+.section__item{
+    border: 1px solid #0d1b2a;
+    margin: 5px;
+    width: 45%;
+    border-radius: 10px;
+    padding: 10px;
+    background: #1F5673;
+    color: #ffffff;
+}
+.section__error{
+    display: none;
+    color: red;
+    font-size: 1rem;
+}
+
+.section__form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 0px;
+    width: 90%;
+}
+.section__lobby, .section__server{
+    border: 3px solid #0d1b2a;
+    border-radius: 10px;
+    padding: 10px;
+    width: 45%;
+    margin: 10px 0px 10px 0px;
+    background: #e0e1dd;
+}
+.section__textarea{
+    border: 3px solid #0d1b2a;
+    height: 150px;
+    max-height: 150px;
+    min-width: 97%;
+    max-width: 97%;
+    background: #e0e1dd;
+    border-radius: 10px;
+    margin-left: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.section__button{
+    margin: 10px 0px 10px 0px;
+    background: #0d1b2a;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 97%;
+    margin: 10px 0px 10px 0px; 
+}
+.footer{
+    background-color: rgba(224, 225, 221, 0.8);
+    width: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 20px 20px;
+}
+.footer__desc{
+    font-size: 1.1rem;
+}
+@media only screen and (max-width: 1336px){
+.section__item{
+    width: 44%;
+}
+}
+@media only screen and (max-width: 1120px){
+    .section__item{
+        width: 100%;
+        text-align: center;
+    }
+    }
+@media only screen and (max-width: 820px){
+.header{
+    width: 80%;
+}
+.section{
+    width: 80%;
+}
+.footer{
+    width: 80%;
+}
+}
+@media only screen and (max-width: 500px){
+    .header{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .header__logo{
+        width: 80%;
+    }
+    .section{
+        width: 90%;
+    }
+
+    .section__form{
+        display: flex;
+        flex-direction: column;
+    }
+    .section__lobby{
+        width: 90%;
+    }
+    .section__server{
+        width: 97%;
+    }
+    .section__textarea{
+        margin-top: 10px;
+    }
+    .footer{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
